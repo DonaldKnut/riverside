@@ -50,14 +50,10 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col w-full gap-3 sm:flex-row">
+          <Button type="button" title="Live Stream" variant="btn_green" />
           <Button
             type="button"
-            title="Fostering Education"
-            variant="btn_green"
-          />
-          <Button
-            type="button"
-            title="Educational Initiatives?"
+            title="Stream Our Sessions"
             icon="/play.svg"
             variant="btn_white_text"
           />
