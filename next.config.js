@@ -7,15 +7,13 @@ if (process.env.NODE_ENV === "production") {
   nextConfig.images = {
     unoptimized: true,
   };
-  nextConfig.exportPathMap = async (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) => {
-    // Your custom exportPathMap logic
-    return {
+
+  nextConfig.generateStaticParams = async () => {
+    // Your custom generateStaticParams logic
+    return [
       // Custom paths if needed
-      "/": { page: "/" },
-    };
+      { route: "/" },
+    ];
   };
 }
 
