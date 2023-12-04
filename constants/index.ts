@@ -1,86 +1,90 @@
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: '/', key: 'home', label: 'Home' },
-  { href: '/', key: 'how_hilink_work', label: 'How Hilink Work?' },
-  { href: '/', key: 'services', label: 'Services' },
-  { href: '/', key: 'pricing ', label: 'Pricing ' },
-  { href: '/', key: 'contact_us', label: 'Contact Us' },
+  { href: "/", key: "home", label: "Home" },
+  { href: "/", key: "how_hilink_work", label: "About Riverside" },
+  { href: "/", key: "services", label: "Services" },
+  { href: "/", key: "pricing ", label: "Sermon" },
+  { href: "/", key: "contact_us", label: "Preachings" },
 ];
 
 // CAMP SECTION
 export const PEOPLE_URL = [
-  '/person-1.png',
-  '/person-2.png',
-  '/person-3.png',
-  '/person-4.png',
+  "/person-1.png",
+  "/person-2.png",
+  "/person-3.png",
+  "/person-4.png",
 ];
 
 // FEATURES SECTION
 export const FEATURES = [
   {
-    title: 'Real maps can be offline',
-    icon: '/map.svg',
-    variant: 'green',
+    title: "Mission Trips",
+    icon: "/map.svg",
+    variant: "green",
     description:
-      'We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location',
+      "In line with our commitment to global service, our church actively participates in mission trips. These trips involve providing humanitarian aid, building homes and schools in underprivileged areas, and offering medical missions to provide healthcare in remote regions.",
   },
   {
-    title: 'Set an adventure schedule',
-    icon: '/calendar.svg',
-    variant: 'green',
+    title: "Community Outreach Programs",
+    icon: "/calendar.svg",
+    variant: "green",
     description:
-      "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
+      "Our church actively engages in community outreach programs to address the needs of our neighbors. We conduct regular food drives to support local families facing challenges and organize clothing donations for the homeless. Additionally, our volunteers participate in various activities at local shelters and community centers, providing essential support to those in need.",
   },
   {
-    title: 'Technology using augment reality',
-    icon: '/tech.svg',
-    variant: 'green',
+    title: "Educational Initiatives",
+    icon: "/tech.svg",
+    variant: "green",
     description:
-      'Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection',
+      "Dedicated to fostering education, we offer after-school tutoring programs to assist students in their academic journey. Our commitment extends to providing scholarship funds for those pursuing higher education. We also conduct workshops covering life skills, financial literacy, and parenting to empower individuals and families in our community.",
   },
   {
-    title: 'Many new locations every month',
-    icon: '/location.svg',
-    variant: 'orange',
+    title: "Mission Trips",
+    icon: "/location.svg",
+    variant: "orange",
     description:
-      'Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing',
+      "In line with our commitment to global service, our church actively participates in mission trips. These trips involve providing humanitarian aid, building homes and schools in underprivileged areas, and offering medical missions to provide healthcare in remote regions.",
   },
 ];
 
 // FOOTER SECTION
 export const FOOTER_LINKS = [
   {
-    title: 'Learn More',
+    title: "Learn More",
     links: [
-      'About Hilink',
-      'Press Releases',
-      'Environment',
-      'Jobs',
-      'Privacy Policy',
-      'Contact Us',
+      "About Riverside Victory Church",
+      "Press Releases",
+      "Environment",
+      "Jobs",
+      "Privacy Policy",
+      "Contact Us",
     ],
   },
   {
-    title: 'Our Community',
-    links: ['Climbing xixixi', 'Hiking hilink', 'Hilink kinthill'],
+    title: "Our Community",
+    links: [
+      "Arts and Culture",
+      "Senior Care and Support",
+      "Crisis Response and Relief",
+    ],
   },
 ];
 
 export const FOOTER_CONTACT_INFO = {
-  title: 'Contact Us',
+  title: "Contact Us",
   links: [
-    { label: 'Admin Officer', value: '123-456-7890' },
-    { label: 'Email Officer', value: 'hilink@akinthil.com' },
+    { label: "Head Pastor", value: "+2348127453811" },
+    { label: "Email", value: "ayobamimiraclea@gmail.com" },
   ],
 };
 
 export const SOCIALS = {
-  title: 'Social',
+  title: "Social",
   links: [
-    '/facebook.svg',
-    '/instagram.svg',
-    '/twitter.svg',
-    '/youtube.svg',
-    '/wordpress.svg',
+    "/facebook.svg",
+    "/instagram.svg",
+    "/twitter.svg",
+    "/youtube.svg",
+    "/wordpress.svg",
   ],
 };
