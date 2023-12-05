@@ -32,13 +32,13 @@ const Hero = () => {
       <div className="hero-map" />
 
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
-        <Image
+        {/* <Image
           src="/riverside_logo.png"
           alt="camp"
           width={50}
           height={50}
           className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
-        />
+        /> */}
         {/* <h1 className="bold-52 lg:bold-88">
           Riverside Victory International Ministry
         </h1> */}
