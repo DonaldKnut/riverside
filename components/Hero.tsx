@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Button from "./Button";
+import Link from "next/link";
 
 interface TypewriterProps {
   text: string;
@@ -76,13 +77,21 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col w-full gap-3 sm:flex-row">
-          <Button type="button" title="Live Stream" variant="btn_dark_green" />
-          <Button
-            type="button"
-            title="Stream Our Sessions"
-            icon="/play.svg"
-            variant="btn_white_text"
-          />
+          <Link href="/https://www.youtube.com/@riversidevictorychurch772">
+            <Button
+              type="button"
+              title="Live Stream"
+              variant="btn_dark_green"
+            />
+          </Link>
+          <Link href="/https://www.youtube.com/@riversidevictorychurch772">
+            <Button
+              type="button"
+              title="Stream Our Sessions"
+              icon="/play.svg"
+              variant="btn_white_text"
+            />
+          </Link>
         </div>
       </div>
 
