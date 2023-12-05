@@ -1,5 +1,29 @@
+"use client";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Button from "./Button";
+
+interface TypewriterProps {
+  text: string;
+}
+
+const Typewriter: React.FC<TypewriterProps> = ({ text }) => {
+  const [displayedText, setDisplayedText] = useState("");
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (index < text.length) {
+      const intervalId = setInterval(() => {
+        setDisplayedText((prevText) => prevText + text[index]);
+        setIndex((prevIndex) => prevIndex + 1);
+      }, 100); // Adjust the interval speed as needed
+
+      return () => clearInterval(intervalId);
+    }
+  }, [index, text]);
+
+  return <h1 className="bold-52 lg:bold-88">{displayedText}</h1>;
+};
 
 const Hero = () => {
   return (
@@ -8,15 +32,17 @@ const Hero = () => {
 
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
         <Image
-          src="/camp.svg"
+          src="/riverside_logo.png"
           alt="camp"
           width={50}
           height={50}
           className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
         />
-        <h1 className="bold-52 lg:bold-88">
+        {/* <h1 className="bold-52 lg:bold-88">
           Riverside Victory International Ministry
-        </h1>
+        </h1> */}
+
+        <Typewriter text="Riverside Victory International Ministry" />
         <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
           Our church actively engages in community outreach programs to address
           the needs of our neighbors. We conduct regular food drives to support
@@ -50,7 +76,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col w-full gap-3 sm:flex-row">
-          <Button type="button" title="Live Stream" variant="btn_green" />
+          <Button type="button" title="Live Stream" variant="btn_dark_green" />
           <Button
             type="button"
             title="Stream Our Sessions"

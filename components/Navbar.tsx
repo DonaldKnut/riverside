@@ -1,16 +1,29 @@
+"use client";
+import { useState } from "react";
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
+import "./Navbar.css";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav className="flexBetween max-container padding-container relative z-30 py-5">
+    <nav
+      className={`flexBetween max-container padding-container relative z-30 py-5 ${
+        isOpen ? "active" : ""
+      }`}
+    >
       <Link href="/">
         <Image src="/riverside_logo.png" alt="logo" width={74} height={29} />
       </Link>
 
-      <ul className="hidden h-full gap-12 lg:flex">
+      <ul className={`h-full gap-12 lg:flex ${isOpen ? "flex" : "hidden"}`}>
         {NAV_LINKS.map((link) => (
           <Link
             href={link.href}
@@ -22,22 +35,23 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className="lg:flexCenter hidden">
+      <div className={`lg:flexCenter hidden ${isOpen ? "hidden" : ""}`}>
         <Button
           type="button"
           title="Stream Now"
-          icon="/user.svg"
+          icon="/live.png"
           variant="btn_dark_green"
         />
       </div>
 
-      <Image
-        src="menu.svg"
-        alt="menu"
-        width={32}
-        height={32}
-        className="inline-block cursor-pointer lg:hidden"
-      />
+      <div
+        className={`navbar-burger ${isOpen ? "is-active" : ""}`}
+        onClick={toggleNavbar}
+      >
+        <span className="burger-bar"></span>
+        <span className="burger-bar"></span>
+        <span className="burger-bar"></span>
+      </div>
     </nav>
   );
 };

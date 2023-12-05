@@ -1,0 +1,26 @@
+.burger-bar {
+  background-color: #ffffff;
+  height: 3px;
+  width: 25px;
+  border-radius: 27px;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar.active {
+  box-shadow: 2px 2px 9px #346334;
+  background-color: #3f813f;
+  /* color: #000; */
+}
+
+.navbar-burger.is-active .burger-bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-8px, 9px);
+}
+
+.navbar-burger.is-active .burger-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-burger.is-active .burger-bar:nth-child(3) {
+  transform: rotate(45deg) translate(-3px, -5px);
+}
