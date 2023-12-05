@@ -40,7 +40,7 @@ const Navbar = () => {
           <Button
             type="button"
             title="Stream Now"
-            icon="/live.png"
+            icon="/user.svg"
             variant="btn_dark_green"
           />
         </Link>
