@@ -73,8 +73,8 @@ export const FOOTER_LINKS = [
 export const FOOTER_CONTACT_INFO = {
   title: "Contact Us",
   links: [
-    { label: "Head Pastor", value: "+2348127453811" },
-    { label: "Email", value: "ayobamimiraclea@gmail.com" },
+    { label: "Head Pastor", value: "+2348127453811", type: "tel" },
+    { label: "Email", value: "ayobamimiraclea@gmail.com", type: "email" },
   ],
 };
 
