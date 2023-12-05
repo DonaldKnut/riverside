@@ -36,12 +36,14 @@ const Navbar = () => {
       </ul>
 
       <div className={`lg:flexCenter hidden ${isOpen ? "hidden" : ""}`}>
-        <Button
-          type="button"
-          title="Stream Now"
-          icon="/live.png"
-          variant="btn_dark_green"
-        />
+        <Link href="/https://www.youtube.com/@riversidevictorychurch772">
+          <Button
+            type="button"
+            title="Stream Now"
+            icon="/live.png"
+            variant="btn_dark_green"
+          />
+        </Link>
       </div>
 
       <div
