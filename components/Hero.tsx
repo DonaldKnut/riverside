@@ -77,13 +77,30 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col w-full gap-3 sm:flex-row">
-          <Link href="/https://www.youtube.com/@riversidevictorychurch772">
+          <a
+            href="https://www.youtube.com/@riversidevictorychurch772"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button
               type="button"
               title="Live Stream"
               variant="btn_dark_green"
             />
-          </Link>
+          </a>
+          <a
+            href="https://www.youtube.com/@riversidevictorychurch772"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              type="button"
+              title="Stream Now"
+              icon="/user.svg"
+              variant="btn_dark_green"
+            />
+          </a>
+
           <Link href="/https://www.youtube.com/@riversidevictorychurch772">
             <Button
               type="button"
