@@ -95,20 +95,11 @@ const Hero = () => {
           >
             <Button
               type="button"
-              title="Stream Now"
-              icon="/user.svg"
-              variant="btn_dark_green"
-            />
-          </a>
-
-          <Link href="/https://www.youtube.com/@riversidevictorychurch772">
-            <Button
-              type="button"
               title="Stream Our Sessions"
               icon="/play.svg"
               variant="btn_white_text"
             />
-          </Link>
+          </a>
         </div>
       </div>
 
